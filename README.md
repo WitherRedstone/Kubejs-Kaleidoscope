@@ -184,7 +184,7 @@ event.create('texe_sickle', 'kaleidoscope_cookery:sickle')
       tier.setAttackDamageBonus(10) // Attack damage bonus
       tier.setSpeed(-1.0) // Attack speed
     })
-
+```
 
 ---
 
