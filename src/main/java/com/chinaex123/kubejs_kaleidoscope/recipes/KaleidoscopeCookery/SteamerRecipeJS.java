@@ -1,4 +1,4 @@
-package com.chinaex123.kubejs_kaleidoscope.recipes.Cookery;
+package com.chinaex123.kubejs_kaleidoscope.recipes.KaleidoscopeCookery;
 
 import dev.latvian.mods.kubejs.recipe.RecipeKey;
 import dev.latvian.mods.kubejs.recipe.component.IngredientComponent;
@@ -8,9 +8,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 
 /**
- * 森罗物语：厨房 - 石磨配方
+ * 森罗物语：厨房 - 蒸笼配方
  */
-public interface MillstoneRecipeJS {
+public interface SteamerRecipeJS {
     RecipeKey<Ingredient> INGREDIENT = IngredientComponent.INGREDIENT.inputKey("ingredient"); // 输入
     RecipeKey<ItemStack> RESULT = ItemStackComponent.ITEM_STACK.outputKey("result"); // 输出
 

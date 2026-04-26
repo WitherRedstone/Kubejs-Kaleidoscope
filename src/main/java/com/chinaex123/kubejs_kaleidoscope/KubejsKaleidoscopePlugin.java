@@ -2,9 +2,9 @@ package com.chinaex123.kubejs_kaleidoscope;
 
 import com.chinaex123.kubejs_kaleidoscope.item.KnifeItemBuilder;
 import com.chinaex123.kubejs_kaleidoscope.item.SickleItemBuilder;
-import com.chinaex123.kubejs_kaleidoscope.recipes.Cookery.*;
-import com.chinaex123.kubejs_kaleidoscope.recipes.Tavern.BarrelRecipeJS;
-import com.chinaex123.kubejs_kaleidoscope.recipes.Tavern.PressingTubRecipeJS;
+import com.chinaex123.kubejs_kaleidoscope.recipes.KaleidoscopeCookery.*;
+import com.chinaex123.kubejs_kaleidoscope.recipes.KaleidoscopeTavern.BarrelRecipeJS;
+import com.chinaex123.kubejs_kaleidoscope.recipes.KaleidoscopeTavern.PressingTubRecipeJS;
 import dev.latvian.mods.kubejs.plugin.KubeJSPlugin;
 import dev.latvian.mods.kubejs.recipe.schema.RecipeSchemaRegistry;
 import dev.latvian.mods.kubejs.registry.BuilderTypeRegistry;
@@ -19,7 +19,6 @@ public class KubejsKaleidoscopePlugin implements KubeJSPlugin {
         registry.of(Registries.ITEM, reg -> {
             reg.add(ResourceLocation.parse("kaleidoscope_cookery:knife"), KnifeItemBuilder.class, KnifeItemBuilder::new);
             reg.add(ResourceLocation.parse("kaleidoscope_cookery:sickle"), SickleItemBuilder.class, SickleItemBuilder::new);
-
         });
     }
 

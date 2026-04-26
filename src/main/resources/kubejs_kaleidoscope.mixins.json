@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "com.chinaex123.kubejs_kaleidoscope.mixin",
+  "package": "com.chinaex123.kubejs_kaleidoscope.event",
   "compatibilityLevel": "JAVA_21",
   "mixins": [],
   "injectors": {

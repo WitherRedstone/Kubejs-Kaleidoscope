@@ -1,4 +1,4 @@
-package com.chinaex123.kubejs_kaleidoscope.recipes.Cookery;
+package com.chinaex123.kubejs_kaleidoscope.recipes.KaleidoscopeCookery;
 
 import dev.latvian.mods.kubejs.recipe.RecipeKey;
 import dev.latvian.mods.kubejs.recipe.component.*;
