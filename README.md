@@ -8,18 +8,21 @@
 This mod adds KubeJS integration for the Kaleidoscope series mods.
 
 # Recipe Types:
-- Kaleidoscope Cookery - Stockpot
-- Kaleidoscope Cookery - Pot
-- Kaleidoscope Cookery - Chopping Board
-- Kaleidoscope Cookery - Millstone
-- Kaleidoscope Cookery - Steamer
-- Kaleidoscope Cookery - Teapot
-- Kaleidoscope Tavern - Pressing Tub
-- Kaleidoscope Tavern - Barrel
+- Kaleidoscope Cookery - Stockpot;
+- Kaleidoscope Cookery - Pot;
+- Kaleidoscope Cookery - Chopping Board;
+- Kaleidoscope Cookery - Millstone;
+- Kaleidoscope Cookery - Steamer;
+- Kaleidoscope Cookery - Teapot;
+- Kaleidoscope Tavern - Pressing Tub;
+- Kaleidoscope Tavern - Barrel;
+- Kaleidoscope Chinese Food - Freezing;
+- Kaleidoscope Chinese Food - Refrigerating;
+- Kaleidoscope Chinese Food - Pickle Jar.
 
 # Registerable Item Types:
-- Kaleidoscope Cookery - Kitchen Knife
-- Kaleidoscope Cookery - Sickle
+- Kaleidoscope Cookery - Kitchen Knife;
+- Kaleidoscope Cookery - Sickle.
 
 Kaleidoscope Cookery - Stockpot Recipe:
 ```
@@ -148,6 +151,46 @@ event.recipes.kaleidoscope_tavern.barrel(
   )
 ```
 
+Kaleidoscope Chinese Food - Freezing Recipe：
+```
+event.recipes.kaleidoscope_chinesefood.freezing(input, output, base_time)
+// input Input；
+// output Output item；
+// base_time Processing time in ticks (Optional)。
+
+// Example
+event.recipes.kaleidoscope_chinesefood.freezing("minecraft:blue_ice", "minecraft:packed_ice", 200)
+```
+
+Kaleidoscope Chinese Food - Refrigerating Recipe：
+```
+event.recipes.kaleidoscope_chinesefood.freezing(input, output, base_time)
+// input Input；
+// output Output item；
+// base_time Processing time in ticks (Optional)。
+
+// Example
+event.recipes.kaleidoscope_chinesefood.refrigerating("minecraft:diamond_block", "minecraft:diamond", 200)
+```
+
+Kaleidoscope Chinese Food - Pickle Jar Recipe：
+```
+event.recipes.kaleidoscope_chinesefood.freezing(input, output, base_time)
+// output Output item；
+// input[] Array of input ingredients；
+// fermentTime: Fermentation time in ticks (Optional).
+
+// Example
+  event.recipes.kaleidoscope_chinesefood.pickle_jar(
+    "minecraft:diamond",
+    [
+      "#minecraft:logs",
+      "minecraft:iron_ingot"
+    ],
+    3600
+  )
+```
+
 Kaleidoscope Cookery - Kitchen Knife Registration:
 ```
 event.create(id, type).tier(tier) 
@@ -193,18 +236,21 @@ event.create('texe_sickle', 'kaleidoscope_cookery:sickle')
 模组为森罗物语系列模组添加Kubejs集成
 
 # 配方类型：
-- 森罗物语：厨房 - 汤锅
-- 森罗物语：厨房 - 炒锅
-- 森罗物语：厨房 - 菜板
-- 森罗物语：厨房 - 石磨
-- 森罗物语：厨房 - 蒸笼
-- 森罗物语：厨房 - 茶壶
-- 森罗物语：酒馆 - 果盆配方
-- 森罗物语：酒馆 - 酒桶配方
+- 森罗物语：厨房 - 汤锅；
+- 森罗物语：厨房 - 炒锅；
+- 森罗物语：厨房 - 菜板；
+- 森罗物语：厨房 - 石磨；
+- 森罗物语：厨房 - 蒸笼；
+- 森罗物语：厨房 - 茶壶；
+- 森罗物语：酒馆 - 果盆配方；
+- 森罗物语：酒馆 - 酒桶配方；
+- 森罗物语：国味 - 冰箱冷冻配方；
+- 森罗物语：国味 - 冰箱冷藏配方；
+- 森罗物语：国味 - 腌菜罐配方。
 
 # 注册类型：
-- 森罗物语：厨房 - 菜刀
-- 森罗物语：厨房 - 镰刀
+- 森罗物语：厨房 - 菜刀；
+- 森罗物语：厨房 - 镰刀。
 
 森罗物语：厨房 - 汤锅配方：
 ```
@@ -330,6 +376,46 @@ event.recipes.kaleidoscope_tavern.barrel(
       "minecraft:emerald",
       "minecraft:emerald"
     ]
+  )
+```
+
+森罗物语：国味 - 冰箱冷冻配方：
+```
+event.recipes.kaleidoscope_chinesefood.freezing(input, output, base_time)
+// input 输入；
+// output 输出；
+// base_time 时间(可选)。
+
+// 示例
+event.recipes.kaleidoscope_chinesefood.freezing("minecraft:blue_ice", "minecraft:packed_ice", 200)
+```
+
+森罗物语：国味 - 冰箱冷藏配方：
+```
+event.recipes.kaleidoscope_chinesefood.freezing(input, output, base_time)
+// input 输入；
+// output 输出；
+// base_time 时间(可选)。
+
+// 示例
+event.recipes.kaleidoscope_chinesefood.refrigerating("minecraft:diamond_block", "minecraft:diamond", 200)
+```
+
+森罗物语：国味 - 腌菜罐配方：
+```
+event.recipes.kaleidoscope_chinesefood.freezing(input, output, base_time)
+// output 输出；
+// input[] 输入数组；
+// base_time 发酵时间(可选)。
+
+// 示例
+  event.recipes.kaleidoscope_chinesefood.pickle_jar(
+    "minecraft:diamond",
+    [
+      "#minecraft:logs",
+      "minecraft:iron_ingot"
+    ],
+    3600
   )
 ```
 
