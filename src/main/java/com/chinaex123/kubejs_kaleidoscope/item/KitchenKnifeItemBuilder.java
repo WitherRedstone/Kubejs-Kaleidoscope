@@ -14,7 +14,7 @@ public class KitchenKnifeItemBuilder extends HandheldItemBuilder {
             TagMod.KITCHEN_KNIFE.location()
     };
 
-    public static final ResourceLocation KNIFE_MODEL = ResourceLocation.fromNamespaceAndPath("kaleidoscope_cookery", "item/iron_kitchen_knife");
+    public static final ResourceLocation KNIFE_MODEL = ResourceLocation.fromNamespaceAndPath("kaleidoscope_cookery", "item/kitchen_knife");
 
     public KitchenKnifeItemBuilder(ResourceLocation id) {
         super(id, 0.0f, -2.0f);
