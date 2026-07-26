@@ -24,33 +24,33 @@ config="${mod_id}.mixins.json"
 [[dependencies.${mod_id}]]
     modId="minecraft"
     versionRange="${minecraft_version_range}"
-[[dependencies."${mod_id}"]]
+[[dependencies.${mod_id}]]
     modId = "kubejs"
     versionRange = "[${kubejs_version},)"
     ordering = "AFTER"
 
 ## Optional Dependencies
-[[dependencies."${mod_id}"]]
+[[dependencies.${mod_id}]]
     modId = "kaleidoscope_cookery"
     type = "optional"
     versionRange = "[${cookery_version},)"
     ordering = "AFTER"
-[[dependencies."${mod_id}"]]
+[[dependencies.${mod_id}]]
     modId = "kaleidoscope_tavern"
     type = "optional"
     versionRange = "[${tavern_version},)"
     ordering = "AFTER"
-[[dependencies."${mod_id}"]]
+[[dependencies.${mod_id}]]
     modId = "kaleidoscope_nether"
     type = "optional"
     versionRange = "[${nether_version},)"
     ordering = "AFTER"
-[[dependencies."${mod_id}"]]
+[[dependencies.${mod_id}]]
     modId = "kaleidoscope_end"
     type = "optional"
     versionRange = "[${end_version},)"
     ordering = "AFTER"
-[[dependencies."${mod_id}"]]
+[[dependencies.${mod_id}]]
     modId = "kaleidoscope_chinese_food"
     type = "optional"
     versionRange = "[${chinese_food_version},)"
