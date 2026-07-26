@@ -28,12 +28,13 @@ config="${mod_id}.mixins.json"
     modId = "kubejs"
     versionRange = "[${kubejs_version},)"
     ordering = "AFTER"
-[[dependencies."${mod_id}"]]
-    modId = "kaleidoscope_cookery"
-    versionRange = "[${cookery_version},)"
-    ordering = "AFTER"
 
 ## Optional Dependencies
+[[dependencies."${mod_id}"]]
+    modId = "kaleidoscope_cookery"
+    type = "optional"
+    versionRange = "[${cookery_version},)"
+    ordering = "AFTER"
 [[dependencies."${mod_id}"]]
     modId = "kaleidoscope_tavern"
     type = "optional"

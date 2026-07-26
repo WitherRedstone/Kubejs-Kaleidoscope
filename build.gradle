@@ -149,7 +149,7 @@ dependencies {
     implementation("dev.latvian.mods:rhino:${rhino_version}")
     implementation("dev.latvian.mods:kubejs-neoforge:${kubejs_version}")
 
-    implementation "curse.maven:kaleidoscope-cookery-1309203:${kaleidoscope_cookery_curseforge_file_id}" // 森罗物语：厨房
+    localRuntime "curse.maven:kaleidoscope-cookery-1309203:${kaleidoscope_cookery_curseforge_file_id}" // 森罗物语：厨房
     localRuntime "curse.maven:kaleidoscope-tavern-1475175:${kaleidoscope_tavern_curseforge_file_id}" // 森罗物语：酒馆
     localRuntime "curse.maven:kaleidoscope-nether-1417862:${kaleidoscope_nether_curseforge_file_id}" // 森罗物语：下界
     localRuntime "curse.maven:kaleidoscope-end-1456076:${kaleidoscope_end_curseforge_file_id}" // 森罗物语：末地
