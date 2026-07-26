@@ -5,7 +5,6 @@ import com.chinaex123.kubejs_kaleidoscope.item.SickleItemBuilder;
 import com.chinaex123.kubejs_kaleidoscope.recipes.KaleidoscopeChinesefood.FreezingRecipeJS;
 import com.chinaex123.kubejs_kaleidoscope.recipes.KaleidoscopeChinesefood.PickleJarRecipeJS;
 import com.chinaex123.kubejs_kaleidoscope.recipes.KaleidoscopeChinesefood.RefrigeratingRecipeJS;
-import com.chinaex123.kubejs_kaleidoscope.recipes.KaleidoscopeCookery.*;
 import com.chinaex123.kubejs_kaleidoscope.recipes.KaleidoscopeTavern.BarrelRecipeJS;
 import com.chinaex123.kubejs_kaleidoscope.recipes.KaleidoscopeTavern.PressingTubRecipeJS;
 import dev.latvian.mods.kubejs.plugin.KubeJSPlugin;
