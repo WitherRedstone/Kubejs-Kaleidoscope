@@ -149,14 +149,25 @@ dependencies {
     implementation("dev.latvian.mods:rhino:${rhino_version}")
     implementation("dev.latvian.mods:kubejs-neoforge:${kubejs_version}")
 
-    localRuntime "curse.maven:kaleidoscope-cookery-1309203:${kaleidoscope_cookery_curseforge_file_id}" // 森罗物语：厨房
-    localRuntime "curse.maven:kaleidoscope-tavern-1475175:${kaleidoscope_tavern_curseforge_file_id}" // 森罗物语：酒馆
-    localRuntime "curse.maven:kaleidoscope-nether-1417862:${kaleidoscope_nether_curseforge_file_id}" // 森罗物语：下界
-    localRuntime "curse.maven:kaleidoscope-end-1456076:${kaleidoscope_end_curseforge_file_id}" // 森罗物语：末地
-    localRuntime "curse.maven:kaleidoscope-chinese-food-1479951:${kaleidoscope_chinese_food_curseforge_file_id}" // 森罗物语：国味
+    // 可選依賴
+    // - 森罗物语：厨房
+    compileOnly "curse.maven:kaleidoscope-cookery-1309203:${kaleidoscope_cookery_curseforge_file_id}"
+    runtimeOnly "curse.maven:kaleidoscope-cookery-1309203:${kaleidoscope_cookery_curseforge_file_id}"
+    // - 森罗物语：酒馆
+    compileOnly "curse.maven:kaleidoscope-tavern-1475175:${kaleidoscope_tavern_curseforge_file_id}"
+    runtimeOnly "curse.maven:kaleidoscope-tavern-1475175:${kaleidoscope_tavern_curseforge_file_id}"
+    // - 森罗物语：下界
+    compileOnly "curse.maven:kaleidoscope-nether-1417862:${kaleidoscope_nether_curseforge_file_id}"
+    runtimeOnly "curse.maven:kaleidoscope-nether-1417862:${kaleidoscope_nether_curseforge_file_id}"
+    // - 森罗物语：末地
+    compileOnly "curse.maven:kaleidoscope-end-1456076:${kaleidoscope_end_curseforge_file_id}"
+    runtimeOnly "curse.maven:kaleidoscope-end-1456076:${kaleidoscope_end_curseforge_file_id}"
+    // - 森罗物语：国味
+    compileOnly "curse.maven:kaleidoscope-chinese-food-1479951:${kaleidoscope_chinese_food_curseforge_file_id}"
+    runtimeOnly "curse.maven:kaleidoscope-chinese-food-1479951:${kaleidoscope_chinese_food_curseforge_file_id}"
 
-    compileOnly("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}")
-    runtimeOnly("mezz.jei:jei-${minecraft_version}-forge:${jei_version}")
+    compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}")
+    runtimeOnly("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
@@ -181,8 +192,8 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             kubejs_version                 : kubejs_version,
             cookery_curseforge_file_id     : kaleidoscope_cookery_curseforge_file_id,
             cookery_version                : kaleidoscope_cookery_version,
-            tavern_curseforge_file_id      : kaleidoscope_cookery_curseforge_file_id,
-            tavern_version                 : kaleidoscope_cookery_version,
+            tavern_curseforge_file_id      : kaleidoscope_tavern_curseforge_file_id,
+            tavern_version                 : kaleidoscope_tavern_version,
             nether_curseforge_file_id      : kaleidoscope_nether_curseforge_file_id,
             nether_version                 : kaleidoscope_nether_version,
             end_curseforge_file_id         : kaleidoscope_end_curseforge_file_id,
