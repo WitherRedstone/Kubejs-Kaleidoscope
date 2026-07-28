@@ -159,12 +159,12 @@ dependencies {
 
     implementation fg.deobf("curse.maven:kubejs-238086:8010958")
     implementation fg.deobf("curse.maven:rhino-416294:6186971")
-    implementation fg.deobf("curse.maven:kaleidoscope-cookery-1309203:7966280")
     implementation fg.deobf("curse.maven:architectury-api-419699:5137938")
 
     // 联动
-    implementation fg.deobf("curse.maven:kaleidoscope-tavern-1475175:7785541")
-    implementation fg.deobf("maven.modrinth:kaleidoscopechinesefood:1.0.4-1.20.1")
+    implementation fg.deobf("curse.maven:kaleidoscope-cookery-1309203:8266769")
+    implementation fg.deobf("curse.maven:kaleidoscope-tavern-1475175:8350841")
+    implementation fg.deobf("maven.modrinth:kaleidoscopechinesefood:1.1.9-1.20.1")
 
     // jei
     implementation fg.deobf("curse.maven:jei-238222:7391695")

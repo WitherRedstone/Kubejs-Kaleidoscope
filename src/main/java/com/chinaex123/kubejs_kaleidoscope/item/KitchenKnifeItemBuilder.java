@@ -9,9 +9,9 @@ import net.minecraft.world.item.Item;
 /**
  * 森罗物语：厨房 - 注册菜刀
  */
-public class KnifeItemBuilder extends HandheldItemBuilder {
+public class KitchenKnifeItemBuilder extends HandheldItemBuilder {
 
-    public KnifeItemBuilder(ResourceLocation id) {
+    public KitchenKnifeItemBuilder(ResourceLocation id) {
         super(id, 0.0f, -2.0f);
         this.tag(TagMod.KITCHEN_KNIFE.location()); // 菜刀tag
     }
