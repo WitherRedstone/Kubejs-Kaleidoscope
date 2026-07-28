@@ -33,7 +33,7 @@ public class KubejsKaleidoscopePlugin implements KubeJSPlugin {
         if (isTavernLoaded) {
             registry.register(ResourceLocation.parse("kaleidoscope_tavern:pressing_tub"), PressingTubRecipeJS.SCHEMA); // 森罗物语：酒馆 - 果盆配方
             registry.register(ResourceLocation.parse("kaleidoscope_tavern:barrel"), BarrelRecipeJS.SCHEMA); // 森罗物语：酒馆 - 酒桶配方
-            registry.register(ResourceLocation.parse("kaleidoscope_tavern:shaker"), ShakerRecipeJS.SCHEMA); // 森罗物语：酒馆 - 酒桶配方
+            registry.register(ResourceLocation.parse("kaleidoscope_tavern:shaker"), ShakerRecipeJS.SCHEMA); // 森罗物语：酒馆 - 雪克杯配方
         }
 
         if (isChinesefoodLoaded) {

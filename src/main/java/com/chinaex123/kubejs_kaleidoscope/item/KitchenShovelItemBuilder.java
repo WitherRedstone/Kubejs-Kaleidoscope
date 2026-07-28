@@ -7,7 +7,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 
 /**
- * 森罗物语：厨房 - 注册菜刀
+ * 森罗物语：厨房 - 注册锅铲
  */
 public class KitchenShovelItemBuilder extends HandheldItemBuilder {
     public static final ResourceLocation[] SHOVEL_TAGS = {
@@ -19,7 +19,7 @@ public class KitchenShovelItemBuilder extends HandheldItemBuilder {
     public KitchenShovelItemBuilder(ResourceLocation id) {
         super(id, 0.0f, -2.0f);
         parentModel = SHOVEL_MODEL;
-        tag(SHOVEL_TAGS); // 菜刀tag
+        tag(SHOVEL_TAGS);
     }
 
     @Override
