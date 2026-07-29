@@ -1,4 +1,4 @@
-# KubeJS: Kaleidoscope 功能分类文档
+# KubeJS Kaleidoscope 功能分类文档
 
 ## [English](#English) | [中文](#中文)
 
