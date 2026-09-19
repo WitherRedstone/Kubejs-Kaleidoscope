@@ -162,7 +162,7 @@ dependencies {
     implementation fg.deobf("curse.maven:architectury-api-419699:5137938")
 
     // 联动
-    implementation fg.deobf("curse.maven:kaleidoscope-cookery-1309203:8266769")
+    implementation fg.deobf("curse.maven:kaleidoscope-cookery-1309203:8910014")
     implementation fg.deobf("curse.maven:kaleidoscope-tavern-1475175:8350841")
     implementation fg.deobf("maven.modrinth:kaleidoscopechinesefood:1.1.9-1.20.1")
 
